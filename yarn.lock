@@ -93,8 +93,8 @@
     "@types/node" "*"
 
 "@types/jasmine@^3.3.8":
-  version "3.3.13"
-  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.3.13.tgz#d5daabb0af47bcddee40597acf6e804433bab439"
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.4.1.tgz#214496efdd7870f133051a95d1692f9cc0730ee7"
 
 "@types/minimatch@*":
   version "3.0.3"
