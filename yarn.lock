@@ -4445,14 +4445,14 @@ strip-json-comments@~2.0.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
-strtok3@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-3.0.4.tgz#e8b3e35afafcf46f592cdd71b352a78cc6ee3efe"
-  integrity sha512-mVyL8lmjC29raM131DYFKqwoOy78GWYWB5wY5I0ycqPzPshKchsehm7DPVP8UQH6vqXCS9Wd8dVj+/bEVQjJkQ==
+strtok3@^3.0.4, strtok3@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-3.0.5.tgz#a6c42e5aab525337832268844742fdb85da90d19"
+  integrity sha512-HUN5Bo1y7Pgy+t19hYHUKcYfsXWSvG73DxcndJF62CSQDw5v4EtIGIEoiE77a/xWnwVyFYzrwImmKVt3ObFOCQ==
   dependencies:
     debug "^4.1.1"
     then-read-stream "^2.0.7"
-    token-types "^1.0.4"
+    token-types "^1.1.0"
 
 supports-color@^2.0.0:
   version "2.0.0"
@@ -4599,10 +4599,10 @@ toidentifier@1.0.0:
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
 
-token-types@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/token-types/-/token-types-1.0.4.tgz#954d935616e4c5c01c94d4953ff10fd4f21d6177"
-  integrity sha512-Qhg+62OTm+ip8f6Ko1ylxas2G0ailgvIsHk0gvTmNWDNdQfcN30niH5MoRcVbKdHrHpiWhY159FBUiZkaNzh1w==
+token-types@^1.0.4, token-types@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/token-types/-/token-types-1.1.0.tgz#8bf60f633583089a8653005bdff96020e44f947e"
+  integrity sha512-CgM5GmtJaZ+uTOiZHzs9pwUa/udjEVl/cxQ2KGpl88Hh7k71sdBz9j95dYjx83O68B6CGvefm29l4rBZq1PeuQ==
 
 tough-cookie@~2.4.3:
   version "2.4.3"
