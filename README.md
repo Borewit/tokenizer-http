@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/Borewit/tokenizer-http.svg?branch=master)](https://travis-ci.org/Borewit/tokenizer-http)
-[![npm version](https://badge.fury.io/js/%40tokenizer%2Fhttp.svg)](https://badge.fury.io/js/%40tokenizer%2FFhttp)
+[![npm version](https://badge.fury.io/js/%40tokenizer%2Fhttp.svg)](https://www.npmjs.com/package/@tokenizer/http)
 [![npm downloads](http://img.shields.io/npm/dm/@tokenizer/http.svg)](https://npmcharts.com/compare/@tokenizer/http?interval=30)
 [![dependencies Status](https://david-dm.org/Borewit/tokenizer-http/status.svg)](https://david-dm.org/Borewit/tokenizer-http)
 [![Known Vulnerabilities](https://snyk.io/test/github/Borewit/tokenizer-http/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Borewit/tokenizer-http?targetFile=package.json)
