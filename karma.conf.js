@@ -18,7 +18,7 @@ module.exports = config => {
 
     webpack: {
       mode: 'development',
-      entry: './lib/streaming-http-token-reader.spec.ts',
+      entry: './lib/http-tokenizer.spec.ts',
       resolve: {
         extensions: ['.tsx', '.ts', '.js']
       },
