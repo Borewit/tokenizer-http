@@ -1,17 +1,27 @@
 [![Build Status](https://travis-ci.org/Borewit/streaming-http-token-reader.svg?branch=master)](https://travis-ci.org/Borewit/streaming-http-token-reader)
-[![NPM version](https://badge.fury.io/js/streaming-http-token-reader.svg)](https://npmjs.org/package/streaming-http-token-reader)
-[![npm downloads](http://img.shields.io/npm/dm/streaming-http-token-reader.svg)](https://npmcharts.com/compare/streaming-http-token-reader?interval=30)
+[![npm version](https://badge.fury.io/js/%40tokenizer%2Fhttp.svg)](https://badge.fury.io/js/%40tokenizer%2FFhttp)
+[![npm downloads](http://img.shields.io/npm/dm/@tokenizer/http.svg)](https://npmcharts.com/compare/@tokenizer/http?interval=30)
 [![dependencies Status](https://david-dm.org/Borewit/streaming-http-token-reader/status.svg)](https://david-dm.org/Borewit/streaming-http-token-reader)
 [![Known Vulnerabilities](https://snyk.io/test/github/Borewit/streaming-http-token-reader/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Borewit/streaming-http-token-reader?targetFile=package.json)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/Borewit/streaming-http-token-reader.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Borewit/streaming-http-token-reader/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Borewit/streaming-http-token-reader.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Borewit/streaming-http-token-reader/context:javascript)
-[![Minified size](https://badgen.net/bundlephobia/min/streaming-http-token-reader)](https://bundlephobia.com/result?p=streaming-http-token-reader)
+[![Minified size](https://badgen.net/bundlephobia/min/@tokenizer/http)](https://bundlephobia.com/result?p=@tokenizer/http)
 
-# streaming-http-token-reader
+# @tokenizer/http
 
 Streams HTTP using [RFC-7233](https://tools.ietf.org/html/rfc7233#section-2.3) [range requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Range_requests).
 Prevents the entire content to be downloaded, for metadata analysis.
 This module can be used both in the browser and in [Node.js](https://nodejs.org).
+
+## Installation
+
+```sh
+npm install @tokenizer/http
+```
+
+```sh
+yarn add @tokenizer/http
+```
 
 ## Example
 
