@@ -29,7 +29,7 @@ yarn add @tokenizer/http
 // const mm = require('music-metadata-browser');  // Use module 'music-metadata-browser' client side
 const mm = require('music-metadata'); // Use module 'music-metadata' in Node.js
 
-const {StreamingHttpTokenReader} = require('streaming-http-token-reader');
+import  { HttpTokenizer } from '@tokenizer/http';
 
 const config = {
   avoidHeadRequests: true
@@ -37,10 +37,10 @@ const config = {
 
 const audioTrackUrl = 'https://test-audio.netlify.com/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/01%20-%20Diablo%20Swing%20Orchestra%20-%20Heroines.mp3';
 
-const streamingHttpTokenReader = StreamingHttpTokenReader.from(audioTrackUrl, config);
-streamingHttpTokenReader.init()
+const httpTokenizer = HttpTokenizer.fromUrl(audioTrackUrl, config);
+httpTokenizer.init()
   .then(() => {
-    return mm.parseFromTokenizer(streamingHttpTokenReader, streamingHttpTokenReader.contentType);
+    return mm.parseFromTokenizer(httpTokenizer, httpTokenizer.contentType);
   })
   .then(metadata => {
     // Process metadata
