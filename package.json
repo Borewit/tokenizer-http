@@ -2,8 +2,8 @@
   "name": "streaming-http-token-reader",
   "version": "0.3.1",
   "description": "HTTP-tokenizer-client",
-  "main": "lib/streaming-http-token-reader",
-  "typings": "lib/streaming-http-token-reader",
+  "main": "lib/http-tokenizer",
+  "typings": "lib/http-tokenizer",
   "files": [
     "lib/**/*.js",
     "lib/**/*.d.ts"
@@ -72,8 +72,9 @@
     "webpack": "^4.41.2"
   },
   "dependencies": {
+    "@tokenizer/range": "^0.1.0",
     "debug": "^4.1.1",
     "node-fetch": "^2.6.0",
-    "strtok3": "^3.0.4"
+    "strtok3": "^3.1.2"
   }
 }
