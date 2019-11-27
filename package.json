@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Borewit/streaming-http-token-reader.git"
+    "url": "git+https://github.com/Borewit/tokenizer-http.git"
   },
   "author": {
     "name": "Borewit",
@@ -33,7 +33,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Borewit/streaming-http-token-reader/issues"
+    "url": "https://github.com/Borewit/tokenizer-http/issues"
   },
   "scripts": {
     "clean": "del-cli lib/**/*.js lib/**/*.js.map lib/**/*.d.ts test/**/*.js test/**/*.js.map coverage",
