@@ -5,6 +5,8 @@ update_configs:
     update_schedule: "daily"
     automerged_updates:
       - match:
+          dependency_name: "@tokenizer/range"
+      - match:
           dependency_name: "@types/node"
           update_type: "semver:minor"
       - match:
@@ -15,3 +17,13 @@ update_configs:
           dependency_name: "chai"
       - match:
           dependency_name: "typescript"
+      - match:
+          dependency_name: "coveralls"
+      - match:
+          dependency_name: "@types/jasmine"
+      - match:
+          dependency_name: "karma-coverage-istanbul-reporter"
+      - match:
+          dependency_name: "music-metadata-browser"
+      - match:
+          dependency_name: "tslint"
