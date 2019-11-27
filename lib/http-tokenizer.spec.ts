@@ -1,14 +1,15 @@
 // localStorage.debug = '*';
 
 import * as mm from 'music-metadata-browser';
-import { IStreamingHttpConfig, StreamingHttpTokenReader } from './streaming-http-token-reader';
 import {tiuqottigeloot_vol24_Tracks, providers} from '../node/test/test-data';
+import { IRangeRequestConfig } from '@tokenizer/range';
+import { HttpTokenizer } from './http-tokenizer';
 
 interface IParserTest {
   methodDescription: string;
   enable?: boolean;
 
-  parseUrl(audioTrackUrl: string, config?: IStreamingHttpConfig, options?: mm.IOptions): Promise<mm.IAudioMetadata>;
+  parseUrl(audioTrackUrl: string, config?: IRangeRequestConfig, options?: mm.IOptions): Promise<mm.IAudioMetadata>;
 }
 
 interface IProvider {
@@ -17,7 +18,7 @@ interface IProvider {
 }
 
 interface IFetchProfile {
-  config: IStreamingHttpConfig;
+  config: IRangeRequestConfig;
   provider: IProvider;
 }
 
@@ -25,7 +26,7 @@ const parsers: IParserTest[] = [
   {
     methodDescription: 'StreamingHttpTokenReader => parseTokenizer()',
     parseUrl: (audioTrackUrl, config, options) => {
-      const streamingHttpTokenReader = StreamingHttpTokenReader.fromUrl(audioTrackUrl, config);
+      const streamingHttpTokenReader = HttpTokenizer.fromUrl(audioTrackUrl, config);
       return streamingHttpTokenReader.init().then(() => {
         return mm.parseFromTokenizer(streamingHttpTokenReader, streamingHttpTokenReader.contentType, options);
       });

@@ -1,16 +1,16 @@
 {
-  "name": "streaming-http-token-reader",
+  "name": "@tokenizer/http",
   "version": "0.3.1",
-  "description": "HTTP-tokenizer-client",
-  "main": "lib/streaming-http-token-reader",
-  "typings": "lib/streaming-http-token-reader",
+  "description": "HTTP tokenizer for Node.js and browser",
+  "main": "lib/http-tokenizer",
+  "typings": "lib/http-tokenizer",
   "files": [
     "lib/**/*.js",
     "lib/**/*.d.ts"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Borewit/streaming-http-token-reader.git"
+    "url": "git+https://github.com/Borewit/tokenizer-http.git"
   },
   "author": {
     "name": "Borewit",
@@ -33,7 +33,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Borewit/streaming-http-token-reader/issues"
+    "url": "https://github.com/Borewit/tokenizer-http/issues"
   },
   "scripts": {
     "clean": "del-cli lib/**/*.js lib/**/*.js.map lib/**/*.d.ts test/**/*.js test/**/*.js.map coverage",
@@ -72,8 +72,9 @@
     "webpack": "^4.41.2"
   },
   "dependencies": {
+    "@tokenizer/range": "^0.1.0",
     "debug": "^4.1.1",
     "node-fetch": "^2.6.0",
-    "strtok3": "^3.0.4"
+    "strtok3": "^3.1.2"
   }
 }

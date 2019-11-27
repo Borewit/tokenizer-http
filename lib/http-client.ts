@@ -1,6 +1,6 @@
 import * as initDebug from 'debug';
 import * as _fetch from 'node-fetch';
-import { IContentRangeType, IHeadInfo, IHttpClient, IHttpResponse } from './types'; // Add 'fetch' API for node.js
+import { IRangeRequestClient, IContentRangeType, IHeadRequestInfo, IRangeRequestResponse } from '@tokenizer/range'; // Add 'fetch' API for node.js
 
 const debug = initDebug('streaming-http-token-reader:http-client');
 
@@ -28,7 +28,7 @@ export function parseContentRange(contentRange: string): IContentRangeType {
 /**
  * Simple HTTP-client, which both works in node.js and browser
  */
-export class HttpClient implements IHttpClient {
+export class HttpClient implements IRangeRequestClient {
 
   private static getContentLength(headers: _fetch.Headers): number {
     const contentLength = headers.get('Content-Length');
@@ -40,7 +40,7 @@ export class HttpClient implements IHttpClient {
     return parseContentRange(contentRange);
   }
 
-  private static makeResponse(resp): IHttpResponse {
+  private static makeResponse(resp): IRangeRequestResponse {
     return {
       contentLength: HttpClient.getContentLength(resp.headers),
       contentType: resp.headers.get('Content-Type'),
@@ -52,15 +52,15 @@ export class HttpClient implements IHttpClient {
   constructor(private url: string) {
   }
 
-  public getHeadInfo(): Promise<IHeadInfo> {
+  public getHeadInfo(): Promise<IHeadRequestInfo> {
     return _fetch(this.url, {method: 'HEAD'}).then(resp => HttpClient.makeResponse(resp));
   }
 
-  public getResponse(method: string, range?: [number, number]): Promise<IHttpResponse> {
+  public getResponse(method: string, range?: [number, number]): Promise<IRangeRequestResponse> {
     if (range) {
-      debug(`_makeXHRRequest ${method} ${range[0]}..${range[1]}`);
+      debug(`_getResponse ${method} ${range[0]}..${range[1]}`);
     } else {
-      debug(`_makeXHRRequest ${method} (range not provided)`);
+      debug(`_getResponse ${method} (range not provided)`);
     }
 
     const headers = new _fetch.Headers();
