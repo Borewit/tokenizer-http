@@ -118,6 +118,11 @@
     debug "^4.1.1"
     strtok3 "^3.1.4"
 
+"@tokenizer/token@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@tokenizer/token/-/token-0.1.0.tgz#9ee92540c56ca02e997d65dd14645cf9438c3dcf"
+  integrity sha512-fXk7a5R+aE8bfDRbfT+xRG2evSatjbljGGSUflfQmqw555My8II/EWly2GmcHaqXF5HCMitBEfSNhCRZCrLGGg==
+
 "@types/events@*":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
@@ -4447,7 +4452,7 @@ strip-json-comments@~2.0.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
-strtok3@^3.1.2, strtok3@^3.1.4:
+strtok3@^3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-3.1.4.tgz#3498446fba1ac483005110d950eb79eb8cef7bb6"
   integrity sha512-K8qbPskXA2dR8UTBb0zt+UBSZZaSS3pnB+1xLF3Dt0S37Chu3IsIYKhsHQuKD3Cm6A/3lUMCBG2I7sQKLy/BBQ==
@@ -4455,6 +4460,15 @@ strtok3@^3.1.2, strtok3@^3.1.4:
     debug "^4.1.1"
     then-read-stream "^2.0.8"
     token-types "^1.2.2"
+
+strtok3@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-4.1.1.tgz#75043bb6175ebb22f10d48dfe9b06560345dc647"
+  integrity sha512-7nfDPVwCrx35LVYqEZPfrNJuoqlgOcsW2PIcru4/IbYXjtI17WtdZLtRJtpwR1Mj/alJ01FY57NsX4Gwl/ntTg==
+  dependencies:
+    "@tokenizer/token" "^0.1.0"
+    debug "^4.1.1"
+    then-read-stream "^3.0.0"
 
 supports-color@^2.0.0:
   version "2.0.0"
@@ -4521,6 +4535,11 @@ then-read-stream@^2.0.8:
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/then-read-stream/-/then-read-stream-2.0.8.tgz#1d2c29e46af1327101875abef183e43313876c1b"
   integrity sha512-OIQn3/zF2J/gp6mAQTbBb1AR+3yoSRqjaij0gGnEUcTl93T840mWIZ9sJWwubjwP7VUDwJpT+Tdl7T9RrQmMlw==
+
+then-read-stream@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/then-read-stream/-/then-read-stream-3.0.0.tgz#4a4ec37e23f18135b56fbc61670b6e8195e545b2"
+  integrity sha512-4rrXPPD+MRft1kzKj8qe9Lo0qoz+uEkwn6QxWSM4iXux3p7MP72Oq/QJ849/yhmHweOJJI8jJsMjKvAjI33+2A==
 
 through2@^2.0.0:
   version "2.0.5"
