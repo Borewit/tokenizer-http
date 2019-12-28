@@ -3,7 +3,7 @@
 import * as mm from 'music-metadata-browser';
 import {tiuqottigeloot_vol24_Tracks, providers} from '../node/test/test-data';
 import { IRangeRequestConfig } from '@tokenizer/range';
-import { HttpTokenizer } from './http-tokenizer';
+import * as httpTokenizer from './http-tokenizer';
 
 interface IParserTest {
   methodDescription: string;
@@ -26,7 +26,7 @@ const parsers: IParserTest[] = [
   {
     methodDescription: 'StreamingHttpTokenReader => parseTokenizer()',
     parseUrl: (audioTrackUrl, config, options) => {
-      const streamingHttpTokenReader = HttpTokenizer.fromUrl(audioTrackUrl, config);
+      const streamingHttpTokenReader = httpTokenizer.fromUrl(audioTrackUrl, config);
       return streamingHttpTokenReader.init().then(() => {
         return mm.parseFromTokenizer(streamingHttpTokenReader, streamingHttpTokenReader.contentType, options);
       });
