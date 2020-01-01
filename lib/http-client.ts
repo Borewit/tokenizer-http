@@ -41,10 +41,11 @@ export class HttpClient implements IRangeRequestClient {
   }
 
   private static makeResponse(resp): IRangeRequestResponse {
+    const contentRange = HttpClient.parseContentRange(resp.headers);
     return {
-      contentLength: HttpClient.getContentLength(resp.headers),
-      contentType: resp.headers.get('Content-Type'),
-      contentRange: HttpClient.parseContentRange(resp.headers),
+      size: contentRange ? contentRange.instanceLength : HttpClient.getContentLength(resp.headers),
+      mimeType: resp.headers.get('Content-Type'),
+      contentRange,
       arrayBuffer: () => resp.arrayBuffer()
     };
   }
