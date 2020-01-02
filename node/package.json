@@ -22,7 +22,7 @@
     "del-cli": "^3.0.0",
     "filereader-stream": "^2.0.0",
     "mocha": "^6.2.2",
-    "music-metadata": "^4.8.2",
+    "music-metadata": "^6.0.1",
     "ts-loader": "^6.0.2",
     "ts-node": "^8.4.1",
     "tslint": "^5.20.1",
