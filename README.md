@@ -15,11 +15,13 @@ The [range request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Range_requ
 
 ## Installation
 
-```sh
+Install using [npm](https://www.npmjs.com/get-npm):
+```shell script
 npm install @tokenizer/http
 ```
 
-```sh
+or using [yarn](https://yarnpkg.com/):
+```shell script
 yarn add @tokenizer/http
 ```
 
