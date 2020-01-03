@@ -9,9 +9,9 @@
 
 # @tokenizer/http
 
-Streams HTTP using [RFC-7233](https://tools.ietf.org/html/rfc7233#section-2.3) [range requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Range_requests).
-Prevents the entire content to be downloaded, for metadata analysis.
-This module can be used both in the browser and in [Node.js](https://nodejs.org).
+Specialized [strtok3 tokenizer](https://github.com/Borewit/strtok3#tokenizer) for HTTP(S) [RFC-7233](https://tools.ietf.org/html/rfc7233#section-2.3) [range request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Range_requests) transfer.
+
+The [range request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Range_requests) will ensure only the data is downloaded, which is actually being read, and data [ignored](https://github.com/Borewit/strtok3#method-tokenizerignore) will not be downloaded.
 
 ## Installation
 
@@ -28,7 +28,7 @@ yarn add @tokenizer/http
 ```js
 // const mm = require('music-metadata-browser');  // Use module 'music-metadata-browser' client side
 const mm = require('music-metadata'); // Use module 'music-metadata' in Node.js
-const {HttpTokenizer} = require('@tokenizer/http');
+const {makeTokenizer} = require('@tokenizer/http');
 
 const config = {
   avoidHeadRequests: true
@@ -37,9 +37,8 @@ const config = {
 const audioTrackUrl = 'https://test-audio.netlify.com/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/01%20-%20Diablo%20Swing%20Orchestra%20-%20Heroines.mp3';
 
 (async () => {
-  const httpTokenizer = HttpTokenizer.fromUrl(audioTrackUrl, config);
-  await httpTokenizer.init();
-  const metadata = await mm.parseFromTokenizer(httpTokenizer, httpTokenizer.contentType);
+  const httpTokenizer = await makeTokenizer(audioTrackUrl, config);
+  const metadata = await mm.parseFromTokenizer(httpTokenizer);
   console.log('metadata:', metadata);
 })();
 ```

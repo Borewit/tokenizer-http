@@ -2,8 +2,8 @@
   "name": "@tokenizer/http",
   "version": "0.4.1",
   "description": "HTTP tokenizer for Node.js and browser",
-  "main": "lib/http-tokenizer.js",
-  "typings": "lib/http-tokenizer.d.ts",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "files": [
     "lib/**/*.js",
     "lib/**/*.d.ts"
@@ -38,7 +38,7 @@
   "scripts": {
     "clean": "del-cli lib/**/*.js lib/**/*.js.map lib/**/*.d.ts test/**/*.js test/**/*.js.map coverage",
     "compile-lib": "tsc -p lib/tsconfig.json",
-    "compile-test": "tsc -p lib/tsconfig.spec.json",
+    "compile-test": "tsc -p test/tsconfig.json",
     "compile": "npm run compile-lib && yarn run compile-test",
     "prepublishOnly": "yarn run build",
     "build": "npm run clean && yarn run compile",
@@ -46,7 +46,7 @@
     "karma": "karma start",
     "test": "npm run karma-once",
     "test-node": "cd node && yarn install && yarn test",
-    "karma-once": "karma start --browsers Chrome --single-run",
+    "karma-once": "karma start --browsers ChromeHeadless --single-run",
     "travis-karma": "karma start --browsers Firefox --single-run",
     "post-coveralls": "coveralls < coverage/lcov.info"
   },
@@ -65,16 +65,16 @@
     "karma-jasmine-html-reporter": "^1.4.2",
     "karma-spec-reporter": "^0.0.32",
     "karma-webpack": "^4.0.2",
-    "music-metadata-browser": "^1.6.1",
+    "music-metadata-browser": "^2.0.0",
     "ts-loader": "^6.2.1",
     "tslint": "^5.20.0",
     "typescript": "^3.7.2",
     "webpack": "^4.41.2"
   },
   "dependencies": {
-    "@tokenizer/range": "^0.1.0",
+    "@tokenizer/range": "^0.2.0",
     "debug": "^4.1.1",
     "node-fetch": "^2.6.0",
-    "strtok3": "^3.1.2"
+    "strtok3": "^5.0.0"
   }
 }
