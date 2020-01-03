@@ -1,6 +1,6 @@
 {
   "name": "@tokenizer/http",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "HTTP tokenizer for Node.js and browser",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
