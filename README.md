@@ -13,6 +13,8 @@ Specialized [strtok3 tokenizer](https://github.com/Borewit/strtok3#tokenizer) fo
 
 The [range request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Range_requests) will ensure only the data is downloaded, which is actually being read, and data [ignored](https://github.com/Borewit/strtok3#method-tokenizerignore) will not be downloaded.
 
+The range request mechanism is derived from [@tokenizer/range](https://www.npmjs.com/package/@tokenizer/range).
+
 ## Installation
 
 Install using [npm](https://www.npmjs.com/get-npm):
@@ -71,6 +73,10 @@ Try if range request is supported:
 ```bash
 curl -v -L --header "range: bytes=1-8" http://localhost:8080/bbb/test
 ```
+
+## Dependencies
+
+![dependency graph](https://i.imgur.com/35dN4si.png)
 
 ## Licence
 
