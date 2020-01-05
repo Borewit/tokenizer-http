@@ -1,6 +1,7 @@
 import * as initDebug from 'debug';
 import * as _fetch from 'node-fetch';
-import { IRangeRequestClient, IContentRangeType, IHeadRequestInfo, IRangeRequestResponse } from '@tokenizer/range'; // Add 'fetch' API for node.js
+import { IContentRangeType, IHeadRequestInfo, IRangeRequestResponse } from '@tokenizer/range'; // Add 'fetch' API for node.js
+import { IHttpClient } from './types';
 
 const debug = initDebug('streaming-http-token-reader:http-client');
 
@@ -50,6 +51,8 @@ export class HttpClient implements IHttpClient {
       arrayBuffer: () => resp.arrayBuffer()
     };
   }
+
+  public resolvedUrl: string;
 
   constructor(private url: string) {
   }

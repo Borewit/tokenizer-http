@@ -1,3 +1,5 @@
+import { IRangeRequestClient } from '@tokenizer/range';
+
 export interface IContentRangeType {
   firstBytePosition?: number;
   lastBytePosition?: number;
