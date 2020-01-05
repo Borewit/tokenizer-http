@@ -22,9 +22,13 @@ update_configs:
       - match:
           dependency_name: "karma-coverage-istanbul-reporter"
       - match:
+          dependency_name: "karma-jasmine-html-reporter"
+      - match:
           dependency_name: "music-metadata-browser"
       - match:
           dependency_name: "tslint"
+      - match:
+          dependency_name: "webpack"
   - package_manager: "javascript"
     version_requirement_updates: "increase_versions"
     directory: "/node"
@@ -38,6 +42,8 @@ update_configs:
           dependency_name: "@types/chai"
       - match:
           dependency_name: "@types/mocha"
+      - match:
+          dependency_name: "strtok3"
       - match:
           dependency_name: "ts-node"
       - match:
