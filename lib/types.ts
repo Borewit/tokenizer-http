@@ -1,3 +1,5 @@
+import { IRangeRequestClient } from '@tokenizer/range';
+
 export interface IContentRangeType {
   firstBytePosition?: number;
   lastBytePosition?: number;
@@ -14,9 +16,6 @@ export interface IHttpResponse extends IHeadInfo {
   arrayBuffer: () => Promise<Buffer>;
 }
 
-export interface IHttpClient {
-
-  getHeadInfo?(): Promise<IHeadInfo>;
-
-  getResponse(method: string, range?: [number, number]): Promise<IHttpResponse>;
+export interface IHttpClient extends IRangeRequestClient {
+  resolvedUrl?: string;
 }
