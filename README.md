@@ -13,7 +13,7 @@ Specialized [strtok3 tokenizer](https://github.com/Borewit/strtok3#tokenizer) fo
 
 The [range request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Range_requests) will ensure only the data is downloaded, which is actually being read, and data [ignored](https://github.com/Borewit/strtok3#method-tokenizerignore) will not be downloaded.
 
-The range request mechanism is derived from [@tokenizer/range](https://www.npmjs.com/package/@tokenizer/range).
+The range request mechanism is derived from [@tokenizer/range](https://github.com/Borewit/tokenizer-range).
 
 ## Installation
 
