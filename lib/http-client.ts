@@ -43,6 +43,7 @@ export class HttpClient implements IRangeRequestClient {
   private static makeResponse(resp): IRangeRequestResponse {
     const contentRange = HttpClient.parseContentRange(resp.headers);
     return {
+      url: resp.url,
       size: contentRange ? contentRange.instanceLength : HttpClient.getContentLength(resp.headers),
       mimeType: resp.headers.get('Content-Type'),
       contentRange,
@@ -54,7 +55,10 @@ export class HttpClient implements IRangeRequestClient {
   }
 
   public getHeadInfo(): Promise<IHeadRequestInfo> {
-    return _fetch(this.url, {method: 'HEAD'}).then(resp => HttpClient.makeResponse(resp));
+    return _fetch(this.url, {method: 'HEAD'}).then(resp => {
+      this.resolvedUrl = resp.url;
+      return HttpClient.makeResponse(resp);
+    });
   }
 
   public getResponse(method: string, range?: [number, number]): Promise<IRangeRequestResponse> {
@@ -67,9 +71,9 @@ export class HttpClient implements IRangeRequestClient {
     const headers = new _fetch.Headers();
     headers.set('Range', 'bytes=' + range[0] + '-' + range[1]);
 
-    return _fetch(this.url, {method, headers}).then(response => {
-
+    return _fetch(this.resolvedUrl || this.url, {method, headers}).then(response => {
       if (response.ok) {
+        this.resolvedUrl = response.url;
         return HttpClient.makeResponse(response);
       } else {
         throw new Error(`Unexpected HTTP response status=${response.status}`);
