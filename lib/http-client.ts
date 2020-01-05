@@ -28,7 +28,7 @@ export function parseContentRange(contentRange: string): IContentRangeType {
 /**
  * Simple HTTP-client, which both works in node.js and browser
  */
-export class HttpClient implements IRangeRequestClient {
+export class HttpClient implements IHttpClient {
 
   private static getContentLength(headers: _fetch.Headers): number {
     const contentLength = headers.get('Content-Length');

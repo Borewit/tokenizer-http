@@ -14,10 +14,6 @@ export interface IHttpResponse extends IHeadInfo {
   arrayBuffer: () => Promise<Buffer>;
 }
 
-export interface IHttpClient {
+export interface IHttpClient extends IRangeRequestClient {
   resolvedUrl?: string;
-
-  getHeadInfo?(): Promise<IHeadInfo>;
-
-  getResponse(method: string, range?: [number, number]): Promise<IHttpResponse>;
 }
