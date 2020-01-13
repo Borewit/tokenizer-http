@@ -1802,10 +1802,15 @@ figgy-pudding@^3.5.1:
   resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"
   integrity sha512-vNKxJHTEKNThjfrdJwHc7brvM6eVevuO5nTj6ez8ZQ1qbXTvGthucRF7S4vf2cr71QVnT70V34v0S1DyQsti0w==
 
-file-type@^12.4.2:
-  version "12.4.2"
-  resolved "https://registry.yarnpkg.com/file-type/-/file-type-12.4.2.tgz#a344ea5664a1d01447ee7fb1b635f72feb6169d9"
-  integrity sha512-UssQP5ZgIOKelfsaB5CuGAL+Y+q7EmONuiwF3N5HAH0t27rvrttgi6Ra9k/+DVaY9UF6+ybxu5pOXLUdA8N7Vg==
+file-type@^13.0.3:
+  version "13.0.3"
+  resolved "https://registry.yarnpkg.com/file-type/-/file-type-13.0.3.tgz#38ec631acda18103da09d4f1750836932e6711c4"
+  integrity sha512-fe3+9mnMLbpP8nRQm/cJgehypv375SOFOXFdLYyYe7hWxdWgS5hkDpWnld5At/vvfVEN6rVqKA3EOKMP03tJGg==
+  dependencies:
+    readable-web-to-node-stream "^2.0.0"
+    strtok3 "^5.0.1"
+    token-types "^2.0.0"
+    typedarray-to-buffer "^3.1.5"
 
 fileset@^2.0.3:
   version "2.0.3"
@@ -3204,30 +3209,30 @@ ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-music-metadata-browser@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.0.0.tgz#09763a10ff8982232f6cf70446a3154e8a0fcaa8"
-  integrity sha512-NW44TlAy0kcBjhoCE/jfBH2aWyA7T5VYrBtxG5XNg9lmd7ThYENiQE5n5rqOGz/eFPyFHSx48eRqH/hgjKxOAQ==
+music-metadata-browser@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.0.1.tgz#28d898e5fb3c8ef831dcd1b50457da921ff6f051"
+  integrity sha512-QxotNq6J0WopCLp1+MAKmZ6ueomf8X1rpFkFb0m2YS0u6T5bf066S62n3dCZ2nk6mxnuAA1gAEGP1NL0Ms0nXQ==
   dependencies:
     assert "^2.0.0"
     buffer "^5.2.1"
     debug "^4.0.1"
-    music-metadata "^6.0.1"
+    music-metadata "^6.1.2"
     readable-stream "^3.3.0"
     readable-web-to-node-stream "^2.0.0"
     remove "^0.1.5"
     typedarray-to-buffer "^3.1.5"
 
-music-metadata@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-6.0.1.tgz#968c25f3a1cb682d80fe5406a1bb180349f9b1b0"
-  integrity sha512-UrscSZs7MBhiGZZQgZHJj9tHdhl2+DLLC0jHhFyoHKUrrTg5SKFlVYmW76NgOk70hSpGiNN4x8s/izVMOs8hyg==
+music-metadata@^6.1.2:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-6.2.0.tgz#98772add42d9157e139c8566d7518e1b7915e12a"
+  integrity sha512-meS8f6TR6mpP6xOwOYoLgcpcA2rqaFgf52tPW404uLMSTrGegDPaREeLmXRWzSjhETbykdxDO4eFNh7NbiYBww==
   dependencies:
     content-type "^1.0.4"
     debug "^4.1.0"
-    file-type "^12.4.2"
+    file-type "^13.0.3"
     media-typer "^1.1.0"
-    strtok3 "^5.0.0"
+    strtok3 "^5.0.1"
     token-types "^2.0.0"
 
 nan@^2.12.1:
@@ -3637,6 +3642,11 @@ pbkdf2@^3.0.3:
     ripemd160 "^2.0.1"
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
+
+peek-readable@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/peek-readable/-/peek-readable-3.1.0.tgz#250b08b7de09db8573d7fd8ea475215bbff14348"
+  integrity sha512-KGuODSTV6hcgdZvDrIDBUkN0utcAVj1LL7FfGbM0viKTtCHmtZcuEJ+lGqsp0fTFkGqesdtemV2yUSMeyy3ddA==
 
 performance-now@^2.1.0:
   version "2.1.0"
@@ -4460,6 +4470,15 @@ strtok3@^5.0.0:
     "@tokenizer/token" "^0.1.0"
     debug "^4.1.1"
     then-read-stream "^3.0.0"
+
+strtok3@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-5.0.1.tgz#f89e09fa024dff82e39c160faf8d8706c24e7d21"
+  integrity sha512-AWliiIjyb87onqO8pM+1Hozm+PPcR4YYIWbFUT5OKQ+tOMwgdT8HwJd/IS8v3/gKdAtE5aE2p3FhcWqryuZPLQ==
+  dependencies:
+    "@tokenizer/token" "^0.1.0"
+    debug "^4.1.1"
+    peek-readable "^3.1.0"
 
 supports-color@^2.0.0:
   version "2.0.0"
