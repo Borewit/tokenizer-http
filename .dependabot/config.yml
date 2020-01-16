@@ -26,9 +26,17 @@ update_configs:
       - match:
           dependency_name: "music-metadata-browser"
       - match:
+          dependency_name: "karma-firefox-launcher"
+      - match:
           dependency_name: "tslint"
       - match:
           dependency_name: "webpack"
+      - match:
+          dependency_name: "strtok3"
+      - match:
+          dependency_name: "karma-jasmine"
+      - match:
+          dependency_name: "music-metadata"
   - package_manager: "javascript"
     version_requirement_updates: "increase_versions"
     directory: "/node"
