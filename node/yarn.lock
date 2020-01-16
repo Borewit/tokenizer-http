@@ -589,10 +589,15 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.0"
 
-file-type@^12.4.2:
-  version "12.4.2"
-  resolved "https://registry.yarnpkg.com/file-type/-/file-type-12.4.2.tgz#a344ea5664a1d01447ee7fb1b635f72feb6169d9"
-  integrity sha512-UssQP5ZgIOKelfsaB5CuGAL+Y+q7EmONuiwF3N5HAH0t27rvrttgi6Ra9k/+DVaY9UF6+ybxu5pOXLUdA8N7Vg==
+file-type@^13.0.3:
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/file-type/-/file-type-13.1.0.tgz#5cfeade4745fad9504bb1435b5b5003af272b5a8"
+  integrity sha512-nr4fSvwYSlQl7YmaWS8rsvDrAm6VgCeb2ysHh18+YBSH4RxewhPKUQrj2XRuEMBNnH6E4xw+yWTL7+jiMrh6GA==
+  dependencies:
+    readable-web-to-node-stream "^2.0.0"
+    strtok3 "^5.0.1"
+    token-types "^2.0.0"
+    typedarray-to-buffer "^3.1.5"
 
 filereader-stream@^2.0.0:
   version "2.0.0"
@@ -1179,16 +1184,16 @@ ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-music-metadata@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-6.0.1.tgz#968c25f3a1cb682d80fe5406a1bb180349f9b1b0"
-  integrity sha512-UrscSZs7MBhiGZZQgZHJj9tHdhl2+DLLC0jHhFyoHKUrrTg5SKFlVYmW76NgOk70hSpGiNN4x8s/izVMOs8hyg==
+music-metadata@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-6.2.0.tgz#98772add42d9157e139c8566d7518e1b7915e12a"
+  integrity sha512-meS8f6TR6mpP6xOwOYoLgcpcA2rqaFgf52tPW404uLMSTrGegDPaREeLmXRWzSjhETbykdxDO4eFNh7NbiYBww==
   dependencies:
     content-type "^1.0.4"
     debug "^4.1.0"
-    file-type "^12.4.2"
+    file-type "^13.0.3"
     media-typer "^1.1.0"
-    strtok3 "^5.0.0"
+    strtok3 "^5.0.1"
     token-types "^2.0.0"
 
 node-environment-flags@1.0.6:
@@ -1434,6 +1439,11 @@ readable-stream@^2.0.0, readable-stream@^2.0.1:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
+readable-web-to-node-stream@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/readable-web-to-node-stream/-/readable-web-to-node-stream-2.0.0.tgz#751e632f466552ac0d5c440cc01470352f93c4b7"
+  integrity sha512-+oZJurc4hXpaaqsN68GoZGQAQIA3qr09Or4fqEsargABnbe5Aau8hFn6ISVleT3cpY/0n/8drn7huyyEvTbghA==
+
 readdirp@~3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/readdirp/-/readdirp-3.2.0.tgz#c30c33352b12c96dfb4b895421a49fd5a9593839"
@@ -1677,7 +1687,7 @@ strip-json-comments@2.0.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
-strtok3@^5.0.0, strtok3@^5.0.1:
+strtok3@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/strtok3/-/strtok3-5.0.1.tgz#f89e09fa024dff82e39c160faf8d8706c24e7d21"
   integrity sha512-AWliiIjyb87onqO8pM+1Hozm+PPcR4YYIWbFUT5OKQ+tOMwgdT8HwJd/IS8v3/gKdAtE5aE2p3FhcWqryuZPLQ==
@@ -1803,7 +1813,7 @@ type-detect@^4.0.0, type-detect@^4.0.5:
   resolved "https://registry.yarnpkg.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
   integrity sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==
 
-typedarray-to-buffer@^3.0.4:
+typedarray-to-buffer@^3.0.4, typedarray-to-buffer@^3.1.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/typedarray-to-buffer/-/typedarray-to-buffer-3.1.5.tgz#a97ee7a9ff42691b9f783ff1bc5112fe3fca9080"
   integrity sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
