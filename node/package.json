@@ -27,6 +27,6 @@
   "dependencies": {
     "debug": "^4.1.0",
     "node-fetch": "^2.6.0",
-    "strtok3": "^5.0.1"
+    "strtok3": "^5.0.2"
   }
 }
