@@ -65,16 +65,16 @@
     "karma-jasmine-html-reporter": "^1.5.1",
     "karma-spec-reporter": "^0.0.32",
     "karma-webpack": "^4.0.2",
-    "music-metadata-browser": "^2.0.2",
+    "music-metadata-browser": "^2.0.3",
     "ts-loader": "^6.2.1",
     "tslint": "^6.0.0",
     "typescript": "^3.7.5",
     "webpack": "^4.41.5"
   },
   "dependencies": {
-    "@tokenizer/range": "^0.2.2",
+    "@tokenizer/range": "^0.3.0",
     "debug": "^4.1.1",
     "node-fetch": "^2.6.0",
-    "strtok3": "^5.0.2"
+    "strtok3": "^6.0.0"
   }
 }
