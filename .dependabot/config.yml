@@ -66,3 +66,5 @@ update_configs:
           dependency_name: "coveralls"
       - match:
           dependency_name: "tslint"
+      - match:
+          dependency_name: "music-metadata"
