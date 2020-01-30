@@ -10,7 +10,7 @@
     "post-coveralls": "coveralls < coverage/lcov.info"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.7",
+    "@types/chai": "^4.2.8",
     "@types/mocha": "^5.2.7",
     "@types/node": "^13.5.1",
     "chai": "^4.2.0",
