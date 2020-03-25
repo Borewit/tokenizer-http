@@ -69,7 +69,7 @@
     "ts-loader": "^6.2.2",
     "tslint": "^6.1.0",
     "typescript": "^3.8.3",
-    "webpack": "^4.42.0"
+    "webpack": "^4.42.1"
   },
   "dependencies": {
     "@tokenizer/range": "^0.3.0",
