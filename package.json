@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "@types/jasmine": "^3.5.10",
-    "@types/node": "^13.13.2",
+    "@types/node": "^13.13.4",
     "coveralls": "^3.0.14",
     "del-cli": "^3.0.0",
     "istanbul-instrumenter-loader": "^3.0.1",
