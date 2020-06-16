@@ -3,6 +3,7 @@ export interface IProvider {
   getUrl: (url: string) => string;
 }
 
+
 export const tiuqottigeloot_vol24_Tracks = [
   {
     url: '/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/01%20-%20Diablo%20Swing%20Orchestra%20-%20Heroines.mp3',
@@ -115,6 +116,6 @@ export const tiuqottigeloot_vol24_Tracks = [
 export const providers: { [providerId: string]: IProvider; } = {
   netlify: {
     name: 'Netlify',
-    getUrl: url => 'https://test-audio.netlify.com' + url
+    getUrl: url => 'https://test-audio.netlify.app' + url
   }
 };
