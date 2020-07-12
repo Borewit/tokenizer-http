@@ -80,3 +80,5 @@ update_configs:
           dependency_name: "tslint"
       - match:
           dependency_name: "music-metadata"
+      - match:
+          dependency_name: "del-cli"
