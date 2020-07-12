@@ -44,13 +44,13 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@tokenizer/range@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@tokenizer/range/-/range-0.3.0.tgz#d44c2ff1e453c8b50d0c020873353197fe059757"
-  integrity sha512-faZqalupzRzzRWhTAWLWuBqWkN5j83WeO3xSMBnpR76WYTb+j/ExqLks2n1QFVTkiZKDXBhjqCMPudfWdYwByQ==
+"@tokenizer/range@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@tokenizer/range/-/range-0.3.1.tgz#e331eaad1f2b0925caaa32aaf0404ded3a3c4412"
+  integrity sha512-ayiZH03p4ZP+6fFyD7px/A+cRZBKNn9qyzcu362qPcsr4iKEWHMGOUVUr6S8ffoFq4uJTzrRZSh+vH8Mgx9PJA==
   dependencies:
     debug "^4.1.1"
-    strtok3 "^6.0.0"
+    strtok3 "^6.0.3"
 
 "@tokenizer/token@^0.1.0", "@tokenizer/token@^0.1.1":
   version "0.1.1"
