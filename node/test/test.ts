@@ -1,8 +1,7 @@
 import { assert } from 'chai';
-import { tiuqottigeloot_vol24_Tracks, providers } from './test-data';
 import * as mm from 'music-metadata';
-
 import { makeTokenizer } from '../../lib';
+import { netBlocVol24, providers } from '@music-metadata/test-audio';
 
 describe('streaming-http-token-reader with Node.js', function() {
 
@@ -12,9 +11,8 @@ describe('streaming-http-token-reader with Node.js', function() {
     avoidHeadRequests: false
   };
 
-  it('Test #1', async () => {
-    const track = tiuqottigeloot_vol24_Tracks[0];
-    const audioTrackUrl = providers.netlify.getUrl(track.url);
+  it('Download audio file', async () => {
+    const audioTrackUrl = providers.netlify.getUrl(netBlocVol24.folder, netBlocVol24.tracks[0]);
 
     const tokenizer = await makeTokenizer(audioTrackUrl, config);
     const metadata = await mm.parseFromTokenizer(tokenizer);
