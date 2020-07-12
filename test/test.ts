@@ -1,20 +1,16 @@
 // localStorage.debug = '*';
 
 import * as mm from 'music-metadata-browser';
-import {tiuqottigeloot_vol24_Tracks, providers} from '../node/test/test-data';
+
 import { IRangeRequestConfig } from '@tokenizer/range';
 import { makeTokenizer } from '../lib';
+import { IProvider, netBlocVol24, providers } from '@music-metadata/test-audio';
 
 interface IParserTest {
   methodDescription: string;
   enable?: boolean;
 
   parseUrl(audioTrackUrl: string, config?: IRangeRequestConfig, options?: mm.IOptions): Promise<mm.IAudioMetadata>;
-}
-
-interface IProvider {
-  name: string,
-  getUrl: (url: string) => string;
 }
 
 interface IFetchProfile {
@@ -64,12 +60,12 @@ describe('streaming-http-token-reader', () => {
           }
           describe(`Parser: ${parser.methodDescription}`, () => {
 
-            tiuqottigeloot_vol24_Tracks.forEach(track => {
-              const url = profile.provider.getUrl(track.url);
-              it(`track ${track.metaData.artist} - ${track.metaData.title} from url: ${url}`, () => {
+            netBlocVol24.tracks.forEach(track => {
+              const url = profile.provider.getUrl(netBlocVol24.folder, track);
+              it(`track ${track.metadata.artist} - ${track.metadata.title} from url: ${url}`, () => {
                 return parser.parseUrl(url, profile.config).then(metadata => {
-                  expect(metadata.common.artist).toEqual(track.metaData.artist);
-                  expect(metadata.common.title).toEqual(track.metaData.title);
+                  expect(metadata.common.artist).toEqual(track.metadata.artist);
+                  expect(metadata.common.title).toEqual(track.metadata.title);
                 });
               });
             });
