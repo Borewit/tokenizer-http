@@ -10,6 +10,8 @@ update_configs:
       - match:
           dependency_name: "@types/node"
       - match:
+          dependency_name: "@tokenizer/mocha"
+  - match:
           dependency_name: "ts-node"
       - match:
           dependency_name: "ts-loader"
@@ -19,6 +21,12 @@ update_configs:
           dependency_name: "coveralls"
       - match:
           dependency_name: "@types/jasmine"
+      - match:
+          dependency_name: "karma"
+      - match:
+          dependency_name: "del-cli"
+      - match:
+          dependency_name: "karma-jasmine"
       - match:
           dependency_name: "karma-coverage-istanbul-reporter"
       - match:
