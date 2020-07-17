@@ -5,6 +5,17 @@ import { IContentRangeType, IHeadRequestInfo, IRangeRequestResponse, IRangeReque
 const debug = initDebug('streaming-http-token-reader:http-client');
 
 /**
+ * Configuration options for the HTTP client.
+ */
+export type HttpClientConfig = {
+  resolveUrl?: boolean
+};
+
+const DEFAULT_CONFIG = {
+  resolveUrl: false
+};
+
+/**
  * Simple HTTP-client, which both works in node.js and browser
  */
 export class HttpClient implements IRangeRequestClient {
@@ -31,13 +42,15 @@ export class HttpClient implements IRangeRequestClient {
   }
 
   public resolvedUrl: string;
+  private config: HttpClientConfig;
 
-  constructor(private url: string) {
+  constructor(private url: string, config?: HttpClientConfig) {
+    this.config = config || DEFAULT_CONFIG;
   }
 
   public async getHeadInfo(): Promise<IHeadRequestInfo> {
     const response = await _fetch(this.url, {method: 'HEAD'});
-    this.resolvedUrl = response.url;
+    if (this.config.resolveUrl) this.resolvedUrl = response.url;
     return HttpClient.makeResponse(response);
   }
 
@@ -53,7 +66,7 @@ export class HttpClient implements IRangeRequestClient {
 
     const response = await _fetch(this.resolvedUrl || this.url, {method, headers});
     if (response.ok) {
-      this.resolvedUrl = response.url;
+      if (this.config.resolveUrl) this.resolvedUrl = response.url;
       return HttpClient.makeResponse(response);
     } else {
       throw new Error(`Unexpected HTTP response status=${response.status}`);
