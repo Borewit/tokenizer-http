@@ -27,21 +27,23 @@ or using [yarn](https://yarnpkg.com/):
 yarn add @tokenizer/http
 ```
 
-## Example
+## Usage
+
+### Configuration options
+
+* `resolveUrl`, `boolean`, default value is `true`. Enable caching of redirects of HEAD requests.
+
+### Example
 
 ```js
 // const mm = require('music-metadata-browser');  // Use module 'music-metadata-browser' client side
 const mm = require('music-metadata'); // Use module 'music-metadata' in Node.js
 const {makeTokenizer} = require('@tokenizer/http');
 
-const config = {
-  avoidHeadRequests: true
-};
-
 const audioTrackUrl = 'https://test-audio.netlify.com/Various%20Artists%20-%202009%20-%20netBloc%20Vol%2024_%20tiuqottigeloot%20%5BMP3-V2%5D/01%20-%20Diablo%20Swing%20Orchestra%20-%20Heroines.mp3';
 
 (async () => {
-  const httpTokenizer = await makeTokenizer(audioTrackUrl, config);
+  const httpTokenizer = await makeTokenizer(audioTrackUrl);
   const metadata = await mm.parseFromTokenizer(httpTokenizer);
   console.log('metadata:', metadata);
 })();

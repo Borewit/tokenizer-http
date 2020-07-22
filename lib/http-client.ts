@@ -45,7 +45,8 @@ export class HttpClient implements IRangeRequestClient {
   private config: HttpClientConfig;
 
   constructor(private url: string, config?: HttpClientConfig) {
-    this.config = config || DEFAULT_CONFIG;
+    this.config = DEFAULT_CONFIG;
+    Object.assign(this.config, config);
   }
 
   public async getHeadInfo(): Promise<IHeadRequestInfo> {
