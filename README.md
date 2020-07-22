@@ -27,7 +27,13 @@ or using [yarn](https://yarnpkg.com/):
 yarn add @tokenizer/http
 ```
 
-## Example
+## Usage
+
+### Configuration options
+
+* `resolveUrl`, `boolean`, default value is `true`. Enable caching of redirects of HEAD requests.
+
+### Example
 
 ```js
 // const mm = require('music-metadata-browser');  // Use module 'music-metadata-browser' client side
