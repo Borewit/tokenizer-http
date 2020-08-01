@@ -44,6 +44,8 @@ update_configs:
       - match:
           dependency_name: "strtok3"
       - match:
+          dependency_name: "jasmine-core"
+      - match:
           dependency_name: "karma-jasmine"
       - match:
           dependency_name: "music-metadata"
