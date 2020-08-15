@@ -73,7 +73,7 @@
     "webpack": "^4.44.1"
   },
   "dependencies": {
-    "@tokenizer/range": "^0.3.1",
+    "@tokenizer/range": "^0.3.2",
     "debug": "^4.1.1",
     "node-fetch": "^2.6.0",
     "strtok3": "^6.0.4"
