@@ -3,7 +3,7 @@
   "version": "0.6.1",
   "description": "HTTP tokenizer for Node.js and browser",
   "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/**/*.js",
     "lib/**/*.d.ts"
