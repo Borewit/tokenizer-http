@@ -80,6 +80,6 @@
     "@tokenizer/range": "^0.4.0",
     "debug": "^4.1.1",
     "node-fetch": "^2.6.0",
-    "strtok3": "^6.0.4"
+    "strtok3": "^6.0.6"
   }
 }
