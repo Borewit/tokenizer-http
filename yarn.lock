@@ -3118,30 +3118,30 @@ ms@2.1.2, ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-music-metadata-browser@^2.1.8:
-  version "2.1.8"
-  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.1.8.tgz#98537b5c8364e873f408ff974cbf3536977313fc"
-  integrity sha512-KUxDmqEDVsuS1EIUncm8DATeJtEKlbFW6IUJq4MmAOh+JX1Re8sboKWwwP2DKerjUjZ1ri0pRlc7T7Zd7S6L/w==
+music-metadata-browser@^2.1.9:
+  version "2.1.9"
+  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.1.9.tgz#852724a064964d9dd302ff15e57299e77d2dffda"
+  integrity sha512-Jgq98fERqWDbBQ/inKsGSuWO1hNgdSH+yvKN+wUHRapOoIZZ9Lix1bXdRP9FxovPr+A6U8pahUudIBgda9inGA==
   dependencies:
     assert "^2.0.0"
     buffer "^6.0.3"
     debug "^4.0.1"
-    music-metadata "^7.6.0"
+    music-metadata "^7.6.2"
     readable-stream "^3.6.0"
-    readable-web-to-node-stream "^3.0.0"
+    readable-web-to-node-stream "^3.0.1"
     remove "^0.1.5"
     typedarray-to-buffer "^4.0.0"
 
-music-metadata@^7.6.0:
-  version "7.6.1"
-  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-7.6.1.tgz#619b538cf394779b534b7d9d8e22759ceb9d7995"
-  integrity sha512-wH594JwxSB8dUGDVx/abku62mT+PWntrhkWuyrp/luGnA7B5VPSbNpdsoXD1bPR/qOVwsYUAGKlpddM5nU0pOA==
+music-metadata@^7.6.2:
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-7.6.2.tgz#7c46aaa32f37d3f747d653006e24c3f0efd83dc6"
+  integrity sha512-yICd18bxEhphpUPwwzDe8wP3LSsbnKzPjuIDKAYpXgYVkMl2aZxvWx6qA59ccsVC0J5FeEhbRlWiAZ6IFZZYZg==
   dependencies:
     content-type "^1.0.4"
     debug "^4.3.1"
     file-type "^16.1.0"
     media-typer "^1.1.0"
-    strtok3 "^6.0.4"
+    strtok3 "^6.0.6"
     token-types "^2.0.0"
 
 nan@^2.12.1:
@@ -3764,10 +3764,10 @@ readable-stream@^3.6.0:
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
 
-readable-web-to-node-stream@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/readable-web-to-node-stream/-/readable-web-to-node-stream-3.0.0.tgz#4ca5408e70471069119d691934141a52de413955"
-  integrity sha512-HNmLb3n0SteGAs8HQlErYPGeO+y7cvL/mVUKtXeUkl0iCZ/2GIgKGrCFHyS7UXFnO8uc9U+0y3pYIzAPsjFfvA==
+readable-web-to-node-stream@^3.0.0, readable-web-to-node-stream@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/readable-web-to-node-stream/-/readable-web-to-node-stream-3.0.1.tgz#3f619b1bc5dd73a4cfe5c5f9b4f6faba55dff845"
+  integrity sha512-4zDC6CvjUyusN7V0QLsXVB7pJCD9+vtrM9bYDRv6uBQ+SKfx36rp5AFNPRgh9auKRul/a1iFZJYXcCbwRL+SaA==
   dependencies:
     "@types/readable-stream" "^2.3.9"
     readable-stream "^3.6.0"
