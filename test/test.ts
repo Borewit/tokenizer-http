@@ -31,6 +31,8 @@ const parsers: IParserTest[] = [
 
 describe('streaming-http-token-reader', () => {
 
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = 20000;
+
   describe('Parse WebAmp tracks', () => {
 
     const profiles: IFetchProfile[] = [
