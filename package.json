@@ -51,7 +51,7 @@
     "test": "npm run karma-once",
     "test-node": "cd node && yarn install && yarn test",
     "karma-once": "karma start --browsers ChromeHeadless --single-run",
-    "travis-karma": "karma start --browsers Firefox --single-run",
+    "karma-browserstack": "karma start --browsers bs_win_chrome,bs_osx_safari,bs_win_edge --single-run --reporters coverage-istanbul,spec,BrowserStack",
     "post-coveralls": "coveralls < coverage/lcov.info"
   },
   "devDependencies": {
@@ -63,6 +63,7 @@
     "istanbul-instrumenter-loader": "^3.0.1",
     "jasmine-core": "^3.6.0",
     "karma": "^6.1.0",
+    "karma-browserstack-launcher": "^1.6.0",
     "karma-chrome-launcher": "^3.1.0",
     "karma-coverage-istanbul-reporter": "^3.0.3",
     "karma-firefox-launcher": "^2.1.0",
