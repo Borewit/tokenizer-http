@@ -1,6 +1,5 @@
 ![Node.js CI](https://github.com/Borewit/tokenizer-http/workflows/Node.js%20CI/badge.svg)
 ![Browserstack CI](https://github.com/Borewit/tokenizer-http/workflows/Browserstack%20CI/badge.svg)
-[![Build Status](https://travis-ci.org/Borewit/tokenizer-http.svg?branch=master)](https://travis-ci.org/Borewit/tokenizer-http)
 [![npm version](https://badge.fury.io/js/%40tokenizer%2Fhttp.svg)](https://www.npmjs.com/package/@tokenizer/http)
 [![npm downloads](http://img.shields.io/npm/dm/@tokenizer/http.svg)](https://npmcharts.com/compare/@tokenizer/http?interval=30)
 [![dependencies Status](https://david-dm.org/Borewit/tokenizer-http/status.svg)](https://david-dm.org/Borewit/tokenizer-http)
