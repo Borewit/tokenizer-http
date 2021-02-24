@@ -1276,14 +1276,7 @@ debug@4, debug@^4.0.1, debug@^4.1.1, debug@^4.3.1, debug@~4.3.1:
   dependencies:
     ms "2.1.2"
 
-debug@^3.0.0, debug@^3.2.6:
-  version "3.2.6"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
-  integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
-  dependencies:
-    ms "^2.1.1"
-
-debug@^3.1.0:
+debug@^3.0.0, debug@^3.1.0, debug@^3.2.6:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
   integrity sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==
@@ -3068,22 +3061,22 @@ ms@2.1.2, ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-music-metadata-browser@^2.2.4:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.2.4.tgz#727710af12414e7bc6854d1a7446c7bd9bdfbdac"
-  integrity sha512-ntgZ2q7osM769KtEiWo9m6faB50VO2lDJwqGJSF8ggNPpN0PRDZS8bfXTJnEa3su3YBLR0E5BA4avs2g5aZbFg==
+music-metadata-browser@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.2.5.tgz#3f7a4009a6c9d0da79d8c718609bef1823f44364"
+  integrity sha512-61jWxHGA7b7hTW/iHKSTzbcbbFlt5VWIX6WKR7WHzPnqYkb1JIDV7bTkAzPRk5jYIDHQ/KQIvzbvsXUr2GZ4Ng==
   dependencies:
     buffer "^6.0.3"
     debug "^4.0.1"
-    music-metadata "^7.6.8"
+    music-metadata "^7.8.0"
     readable-stream "^3.6.0"
     readable-web-to-node-stream "^3.0.1"
     typedarray-to-buffer "^4.0.0"
 
-music-metadata@^7.6.8:
-  version "7.6.8"
-  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-7.6.8.tgz#c2faa70778ad0763589c6b862120594b4de7ce79"
-  integrity sha512-Hpb6u+Rz369Dit0nJIsligYBGOduVDsvpXOyqXFxPAOqMhZiwrmEZQNB5DfOGdSBqUf+BCfUQHoBMCwTN/Sfiw==
+music-metadata@^7.8.0:
+  version "7.8.0"
+  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-7.8.0.tgz#686a60f82b483c5d7a26315e2ed8237523ee53a2"
+  integrity sha512-NRiWHp8XkpfHadrYgpnZ4P5B3+ouLW1gYa1+D1O19NmFK4SglKwQksNzBSNhiIMAY88+3SeSSfbgN0kIMNa5HQ==
   dependencies:
     content-type "^1.0.4"
     debug "^4.3.1"
