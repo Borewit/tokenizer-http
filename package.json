@@ -51,8 +51,7 @@
     "test": "npm run karma-once",
     "test-node": "cd node && yarn install && yarn test",
     "karma-once": "karma start --browsers ChromeHeadless --single-run",
-    "karma-headless": "karma start --single-run --reporters coverage-istanbul,spec,progress",
-    "post-coveralls": "coveralls < coverage/lcov.info"
+    "karma-headless": "karma start --single-run --reporters coverage-istanbul,spec,progress"
   },
   "devDependencies": {
     "@music-metadata/test-audio": "^0.1.0",
