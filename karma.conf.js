@@ -79,46 +79,6 @@ module.exports = config => {
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: false,
 
-    // global BrowserStack configuration
-    browserStack: {
-      forcelocal: true,  // force traffic through the local BrowserStack tunnel, passes flag through to BrowserStackTunnel
-      project: 'tokenizer-http',
-      timeout: 30,  // BROWSERSTACK_IDLE_TIMEOUT
-      captureTimeout: 30
-    },
-
-    // define browsers, see https://www.browserstack.com/automate/capabilities
-    customLaunchers: {
-      bs_win_chrome: {
-        base: 'BrowserStack',
-        os: 'Windows',
-        os_version: '10',
-        browser: 'Chrome',
-        browser_version: '88.0'
-      },
-      bs_win_firefox: {
-        base: 'BrowserStack',
-        os: 'Windows',
-        os_version: '10',
-        browser: 'Firefox',
-        browser_version: '84.0'
-      },
-      bs_osx_safari: {
-        base: 'BrowserStack',
-        os: 'OS X',
-        os_version: 'Big Sur',
-        browser: 'Safari',
-        browser_version: '14'
-      },
-      bs_win_edge: {
-        base: 'BrowserStack',
-        os: 'Windows',
-        os_version: '10',
-        browser: 'Edge',
-        browser_version: '88'
-      }
-    },
-
     // Increase time-outs to prevent disconnects on BrowserStack
     browserDisconnectTimeout : 20000, // default 2000
     browserDisconnectTolerance : 1, // default 0

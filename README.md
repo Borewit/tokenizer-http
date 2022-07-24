@@ -1,5 +1,4 @@
-![Node.js CI](https://github.com/Borewit/tokenizer-http/workflows/Node.js%20CI/badge.svg)
-![Browserstack CI](https://github.com/Borewit/tokenizer-http/workflows/Browserstack%20CI/badge.svg)
+[![Karma CI](https://github.com/Borewit/tokenizer-http/actions/workflows/karma-ci.yml/badge.svg)](https://github.com/Borewit/tokenizer-http/actions/workflows/karma-ci.yml)
 [![npm version](https://badge.fury.io/js/%40tokenizer%2Fhttp.svg)](https://www.npmjs.com/package/@tokenizer/http)
 [![npm downloads](http://img.shields.io/npm/dm/@tokenizer/http.svg)](https://npmcharts.com/compare/@tokenizer/http?interval=30)
 [![Known Vulnerabilities](https://snyk.io/test/github/Borewit/tokenizer-http/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Borewit/tokenizer-http?targetFile=package.json)

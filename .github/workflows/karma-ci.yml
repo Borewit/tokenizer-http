@@ -1,4 +1,4 @@
-name: Browserstack CI
+name: Karma CI
 on:
   push:
 
@@ -6,7 +6,13 @@ jobs:
 
   test:
 
-    runs-on: ubuntu-latest
+    name: Build & run Karma tests
+    strategy:
+      matrix:
+        include:
+          - os: ubuntu-latest
+            browsers: 'Chrome'
+    runs-on: ${{ matrix.os }}
 
     steps:
 
@@ -21,13 +27,15 @@ jobs:
 
       - uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: 16.x
 
       - name: Install dependencies
         run: yarn install
 
-      - name: Perform Karma tests on Browserstack
-        run: yarn run karma-browserstack
+      - name: Run XVFB headless test
+        uses: GabrielBB/xvfb-action@v1
+        with:
+          run: yarn run karma-headless --browsers ${{ matrix.browsers }}
 
       - name: Coveralls Parallel
         uses: coverallsapp/github-action@master
