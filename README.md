@@ -2,7 +2,6 @@
 ![Browserstack CI](https://github.com/Borewit/tokenizer-http/workflows/Browserstack%20CI/badge.svg)
 [![npm version](https://badge.fury.io/js/%40tokenizer%2Fhttp.svg)](https://www.npmjs.com/package/@tokenizer/http)
 [![npm downloads](http://img.shields.io/npm/dm/@tokenizer/http.svg)](https://npmcharts.com/compare/@tokenizer/http?interval=30)
-[![dependencies Status](https://david-dm.org/Borewit/tokenizer-http/status.svg)](https://david-dm.org/Borewit/tokenizer-http)
 [![Known Vulnerabilities](https://snyk.io/test/github/Borewit/tokenizer-http/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Borewit/tokenizer-http?targetFile=package.json)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/Borewit/tokenizer-http.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Borewit/tokenizer-http/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Borewit/tokenizer-http.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Borewit/tokenizer-http/context:javascript)
