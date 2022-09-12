@@ -3000,21 +3000,21 @@ ms@2.1.2, ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-music-metadata-browser@^2.5.8:
-  version "2.5.8"
-  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.5.8.tgz#538cc79f24e8bfe275c81176a623432d459dfb4e"
-  integrity sha512-2DNQ28xRm8YNKu2Mzukv4BMsAMvFi/kQRedQUwbJgiT+d/tgoUFXe/LezlIc5wTgjTT7pCCBQQkfzxh8DgyZPg==
+music-metadata-browser@^2.5.9:
+  version "2.5.9"
+  resolved "https://registry.yarnpkg.com/music-metadata-browser/-/music-metadata-browser-2.5.9.tgz#72855628adfdd57daa2c89893623df08b27ba1fc"
+  integrity sha512-+HmJRuNvSxprB1CNPm6AuQygaxhnrpkfg2P4jWUY6zE8Lench6HbjsothtL636fhfnUYP8hM0MmlqC12yfp3kg==
   dependencies:
     buffer "^6.0.3"
     debug "^4.3.4"
-    music-metadata "^7.12.5"
+    music-metadata "^7.12.6"
     readable-stream "^4.1.0"
     readable-web-to-node-stream "^3.0.2"
 
-music-metadata@^7.12.5:
-  version "7.12.5"
-  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-7.12.5.tgz#2355b2ec6d0a074cc2a9ae8287a9ef608a1c414c"
-  integrity sha512-nVKDwcaKwj5wwIkUNbRZEVgEi3AmensLKI3/MCVW9ehHvA3Ehj1ei59BIBUzVkgNyqFNEb2nQFUR2G4Q8yJ9eg==
+music-metadata@^7.12.6:
+  version "7.12.6"
+  resolved "https://registry.yarnpkg.com/music-metadata/-/music-metadata-7.12.6.tgz#a13739c518358c7d3ce3208b372a7ff304ea117c"
+  integrity sha512-TSDdSZ1E96dCze6sRp9rnib4LFRf6Lon3qfFPZbUyn7BUz3/XyT/ciWfxFEZKEeexmAkIfhBAwH62gfO2QSdlA==
   dependencies:
     "@tokenizer/token" "^0.3.0"
     content-type "^1.0.4"
