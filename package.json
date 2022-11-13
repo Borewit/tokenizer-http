@@ -79,6 +79,6 @@
     "@tokenizer/range": "^0.5.1",
     "debug": "^4.1.1",
     "node-fetch": "^2.6.7",
-    "strtok3": "^6.0.8"
+    "strtok3": "^7.0.0"
   }
 }
