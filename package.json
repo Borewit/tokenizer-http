@@ -78,7 +78,7 @@
   "dependencies": {
     "@tokenizer/range": "^0.5.3",
     "debug": "^4.1.1",
-    "node-fetch": "^2.6.7",
+    "node-fetch": "^2.6.8",
     "strtok3": "^7.0.0"
   }
 }
