@@ -2,7 +2,7 @@ const NOT_FOUND = -1;
 
 export interface IChunk {
   offset: number;
-  data: ArrayBuffer;
+  data: Uint8Array;
 }
 
 interface IChunkRange {
@@ -24,7 +24,7 @@ export class ChunkedFileData {
   /**
    * Adds data to the file storage at a specific offset.
    */
-  public addData(offset: number, data: ArrayBuffer): void {
+  public addData(offset: number, data: Uint8Array): void {
 
     const offsetEnd = offset + data.byteLength - 1;
     const chunkRange = this._getChunkRange(offset, offsetEnd);
@@ -82,7 +82,7 @@ export class ChunkedFileData {
     return false;
   }
 
-  public readToBuffer(buffer: Buffer, offset: number, position: number, length: number) {
+  public readToBuffer(buffer: Uint8Array, offset: number, position: number, length: number): void {
 
     const _pos_offset = position ;
     let dataChunk: IChunk;
@@ -95,7 +95,7 @@ export class ChunkedFileData {
         dataChunk = this._fileData[i];
         const chunkOffset = _pos_offset - dataChunkStart;
         const chunkLength = Math.min(length, dataChunk.data.byteLength - chunkOffset);
-        Buffer.from(dataChunk.data).copy(buffer, offset, chunkOffset, chunkOffset + chunkLength);
+        buffer.set(dataChunk.data.subarray(chunkOffset, chunkOffset + chunkLength), offset);
         if (chunkLength < length) {
           return this.readToBuffer(buffer, offset + chunkLength, position + chunkLength, length - chunkLength);
         }
@@ -105,7 +105,7 @@ export class ChunkedFileData {
     throw new Error(`Offset ${_pos_offset} hasn't been loaded yet.`);
   }
 
-  private _concatData(buffer1: ArrayBuffer, buffer2: ArrayBuffer): ArrayBuffer {
+  private _concatData(buffer1: Uint8Array, buffer2: Uint8Array): Uint8Array {
     const tmp = new Uint8Array(buffer1.byteLength + buffer2.byteLength);
     tmp.set(new Uint8Array(buffer1), 0);
     tmp.set(new Uint8Array(buffer2), buffer1.byteLength);

@@ -7,10 +7,7 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 15
     labels:
       - dependencies
     versioning-strategy: increase
-    ignore:
-      - dependency-name: "node-fetch"
-        versions: [ "3.x", "4.x" ] # Pure ES-Module

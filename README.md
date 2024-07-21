@@ -1,10 +1,7 @@
-[![Karma CI](https://github.com/Borewit/tokenizer-http/actions/workflows/karma-ci.yml/badge.svg)](https://github.com/Borewit/tokenizer-http/actions/workflows/karma-ci.yml)
+[![Node.js CI](https://github.com/Borewit/tokenizer-http/actions/workflows/nodejs-ci.yml/badge.svg?branch=master)](https://github.com/Borewit/tokenizer-http/actions/workflows/nodejs-ci.yml)
 [![npm version](https://badge.fury.io/js/%40tokenizer%2Fhttp.svg)](https://www.npmjs.com/package/@tokenizer/http)
 [![npm downloads](http://img.shields.io/npm/dm/@tokenizer/http.svg)](https://npmcharts.com/compare/@tokenizer/http?interval=30)
 [![Known Vulnerabilities](https://snyk.io/test/github/Borewit/tokenizer-http/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Borewit/tokenizer-http?targetFile=package.json)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/Borewit/tokenizer-http.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Borewit/tokenizer-http/alerts/)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Borewit/tokenizer-http.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Borewit/tokenizer-http/context:javascript)
-[![Minified size](https://badgen.net/bundlephobia/min/@tokenizer/http)](https://bundlephobia.com/result?p=@tokenizer/http)
 
 # @tokenizer/http
 
