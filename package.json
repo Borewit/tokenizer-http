@@ -43,7 +43,7 @@
     "url": "https://github.com/Borewit/tokenizer-http/issues"
   },
   "scripts": {
-    "clean": "del-cli lib/**/*.js lib/**/*.js.map lib/**/*.d.ts test/**/*.js test/**/*.js.map coverage",
+    "clean": "del-cli 'lib/**/*.js' 'lib/**/*.js.map' 'lib/**/*.d.ts' 'test/**/*.js' 'test/**/*.js.map' coverage",
     "compile-lib": "tsc -p lib/tsconfig.json",
     "compile-test": "tsc -p test/tsconfig.json",
     "compile": "npm run compile-lib && yarn run compile-test",
