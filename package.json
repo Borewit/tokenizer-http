@@ -72,7 +72,7 @@
     "karma-sourcemap-loader": "^0.4.0",
     "karma-webpack": "^5.0.1",
     "mocha": "^10.7.0",
-    "music-metadata": "^10.0.0",
+    "music-metadata": "^10.0.1",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
     "tslint": "^6.1.3",
