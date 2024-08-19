@@ -83,7 +83,7 @@
   "dependencies": {
     "@tokenizer/range": "^0.8.0",
     "debug": "^4.3.5",
-    "strtok3": "^8.0.1"
+    "strtok3": "^8.1.0"
   },
   "packageManager": "yarn@4.3.1"
 }
