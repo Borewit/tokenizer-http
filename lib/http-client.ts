@@ -9,7 +9,7 @@ const debug = initDebug('streaming-http-token-reader:http-client');
  * Configuration options for the HTTP client.
  */
 export type HttpClientConfig = {
-  resolveUrl?: boolean
+  resolveUrl?: boolean,
 };
 
 const DEFAULT_CONFIG = {
@@ -24,13 +24,13 @@ export class HttpClient implements IRangeRequestClient {
   public resolvedUrl?: string;
   private readonly config: HttpClientConfig;
 
-  constructor(private url: string, config?: HttpClientConfig) {
+  constructor(private url: string, private abortSignal: AbortSignal, config?: HttpClientConfig) {
     this.config = DEFAULT_CONFIG;
     Object.assign(this.config, config);
   }
 
   public async getHeadInfo(): Promise<IHeadRequestInfo> {
-    const response = new ResponseInfo(await fetch(this.url, {method: 'HEAD'}));
+    const response = new ResponseInfo(await fetch(this.url, {method: 'HEAD', signal: this.abortSignal}));
     if (this.config.resolveUrl) this.resolvedUrl = response.response.url;
     return response.toRangeRequestResponse();
   }
@@ -44,7 +44,7 @@ export class HttpClient implements IRangeRequestClient {
 
     const headers = new Headers();
 
-    const response = new ResponseInfo(await fetch(this.resolvedUrl || this.url, {method, headers}));
+    const response = new ResponseInfo(await fetch(this.resolvedUrl || this.url, {method, headers, signal: this.abortSignal}));
     if (response.response.ok) {
       if (this.config.resolveUrl) this.resolvedUrl = response.response.url;
       return response.toRangeRequestResponse();
