@@ -16,6 +16,7 @@ export function makeTokenizer(
   tokenizerConfig?: rangeTokenizer.IRangeRequestConfig,
   httpClientConfig?: HttpClientConfig
 ): Promise<ITokenizer> {
-  const httpClient = new HttpClient(url, httpClientConfig);
-  return rangeTokenizer.tokenizer(httpClient, tokenizerConfig);
+  const abortController = tokenizerConfig?.abortController ?? new AbortController();
+  const httpClient = new HttpClient(url, abortController.signal, httpClientConfig);
+  return rangeTokenizer.tokenizer(httpClient, {...tokenizerConfig, abortController: abortController});
 }
