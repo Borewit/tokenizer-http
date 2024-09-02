@@ -11,3 +11,8 @@ updates:
     labels:
       - dependencies
     versioning-strategy: increase
+    groups:
+      types:
+        dependency-type: "development"
+        patterns:
+          - "@types/*"
