@@ -1,6 +1,6 @@
-import { HttpClient, HttpClientConfig } from './http-client.js';
+import { HttpClient, type HttpClientConfig } from './http-client.js';
 import * as rangeTokenizer from '@tokenizer/range';
-import { type ITokenizer } from 'strtok3';
+import type { ITokenizer } from 'strtok3';
 
 export { HttpClient, HttpClientConfig } from './http-client.js';
 

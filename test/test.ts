@@ -2,7 +2,7 @@
 
 import { parseFromTokenizer, type IOptions, type IAudioMetadata } from 'music-metadata';
 
-import { type IRangeRequestConfig } from '@tokenizer/range';
+import type { IRangeRequestConfig } from '@tokenizer/range';
 import { makeTokenizer } from '../lib/index.js';
 import { type IProvider, netBlocVol24, providers } from '@music-metadata/test-audio';
 import { assert, expect } from 'chai';

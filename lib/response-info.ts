@@ -6,7 +6,7 @@ export class ResponseInfo {
 
   private getContentLength(): number | undefined {
     const contentLength = this.response.headers.get('Content-Length');
-    return contentLength ? parseInt(contentLength, 10) : undefined;
+    return contentLength ? Number.parseInt(contentLength, 10) : undefined;
   }
 
   public getAcceptRangesHeaderValue(): string | null {
