@@ -301,7 +301,7 @@ __metadata:
     "@biomejs/biome": "npm:^1.8.3"
     "@music-metadata/test-audio": "npm:^0.1.0"
     "@tokenizer/range": "npm:^0.9.0"
-    "@types/chai": "npm:^4.3.16"
+    "@types/chai": "npm:^4.3.19"
     "@types/debug": "npm:^4.1.12"
     "@types/mocha": "npm:^10.0.7"
     "@types/node": "npm:^20.14.11"
@@ -372,10 +372,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/chai@npm:^4.3.16":
-  version: 4.3.16
-  resolution: "@types/chai@npm:4.3.16"
-  checksum: 10c0/745d4a9be429d5d86a7ab26064610b8957fe12dd80e94dc7d0707cf3db1c889e3ffe0d73d69bb15e6d376bf4462a7a75e9d8fc1051750b5d656d6cfe459829b7
+"@types/chai@npm:^4.3.19":
+  version: 4.3.19
+  resolution: "@types/chai@npm:4.3.19"
+  checksum: 10c0/8fd573192e486803c4d04185f2b0fab554660d9a1300dbed5bde9747ab8bef15f462a226f560ed5ca48827eecaf8d71eed64aa653ff9aec72fb2eae272e43a84
   languageName: node
   linkType: hard
 

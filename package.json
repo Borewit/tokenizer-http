@@ -59,7 +59,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
     "@music-metadata/test-audio": "^0.1.0",
-    "@types/chai": "^4.3.16",
+    "@types/chai": "^4.3.19",
     "@types/debug": "^4.1.12",
     "@types/mocha": "^10.0.7",
     "@types/node": "^20.14.11",
