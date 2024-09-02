@@ -314,7 +314,7 @@ __metadata:
     "@types/node": "npm:^20.14.11"
     chai: "npm:^5.1.1"
     coveralls: "npm:^3.1.1"
-    debug: "npm:^4.3.5"
+    debug: "npm:^4.3.6"
     del-cli: "npm:^5.1.0"
     karma: "npm:^6.4.3"
     karma-chrome-launcher: "npm:^3.2.0"
