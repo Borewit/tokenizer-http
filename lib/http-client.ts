@@ -1,6 +1,6 @@
 import initDebug from 'debug';
 
-import { IHeadRequestInfo, IRangeRequestResponse, IRangeRequestClient } from '@tokenizer/range';
+import type { IHeadRequestInfo, IRangeRequestResponse, IRangeRequestClient } from '@tokenizer/range';
 import { ResponseInfo } from './response-info.js'; // Add 'fetch' API for node.js
 
 const debug = initDebug('streaming-http-token-reader:http-client');
@@ -48,9 +48,8 @@ export class HttpClient implements IRangeRequestClient {
     if (response.response.ok) {
       if (this.config.resolveUrl) this.resolvedUrl = response.response.url;
       return response.toRangeRequestResponse();
-    } else {
-      throw new Error(`Unexpected HTTP response status=${response.response.status}`);
     }
+      throw new Error(`Unexpected HTTP response status=${response.response.status}`);
   }
 
 }
