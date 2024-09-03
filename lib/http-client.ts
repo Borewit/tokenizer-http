@@ -23,14 +23,15 @@ export class HttpClient implements IRangeRequestClient {
 
   public resolvedUrl?: string;
   private readonly config: HttpClientConfig;
+  private readonly abortController = new AbortController();
 
-  constructor(private url: string, private abortSignal: AbortSignal, config?: HttpClientConfig) {
+  constructor(private url: string, config?: HttpClientConfig) {
     this.config = DEFAULT_CONFIG;
     Object.assign(this.config, config);
   }
 
   public async getHeadInfo(): Promise<IHeadRequestInfo> {
-    const response = new ResponseInfo(await fetch(this.url, {method: 'HEAD', signal: this.abortSignal}));
+    const response = new ResponseInfo(await fetch(this.url, {method: 'HEAD', signal: this.abortController.signal}));
     if (this.config.resolveUrl) this.resolvedUrl = response.response.url;
     return response.toRangeRequestResponse();
   }
@@ -44,12 +45,17 @@ export class HttpClient implements IRangeRequestClient {
 
     const headers = new Headers();
 
-    const response = new ResponseInfo(await fetch(this.resolvedUrl || this.url, {method, headers, signal: this.abortSignal}));
+    const response = new ResponseInfo(await fetch(this.resolvedUrl || this.url, {method, headers, signal: this.abortController.signal}));
     if (response.response.ok) {
       if (this.config.resolveUrl) this.resolvedUrl = response.response.url;
       return response.toRangeRequestResponse();
     }
       throw new Error(`Unexpected HTTP response status=${response.response.status}`);
+  }
+
+  public abort(): void {
+    debug('abort');
+    this.abortController.abort();
   }
 
 }
