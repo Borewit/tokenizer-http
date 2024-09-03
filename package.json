@@ -1,6 +1,6 @@
 {
   "name": "@tokenizer/http",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "HTTP tokenizer for Node.js and browser",
   "type": "module",
   "exports": {
