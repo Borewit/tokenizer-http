@@ -311,7 +311,7 @@ __metadata:
     "@types/chai": "npm:^4.3.19"
     "@types/debug": "npm:^4.1.12"
     "@types/mocha": "npm:^10.0.7"
-    "@types/node": "npm:^22.5.2"
+    "@types/node": "npm:^22.5.5"
     chai: "npm:^5.1.1"
     coveralls: "npm:^3.1.1"
     debug: "npm:^4.3.6"
@@ -455,12 +455,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.5.2":
-  version: 22.5.2
-  resolution: "@types/node@npm:22.5.2"
+"@types/node@npm:^22.5.5":
+  version: 22.5.5
+  resolution: "@types/node@npm:22.5.5"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10c0/624a7fd76229eacc6c158eb3b9afd55b811d7f01976c5f92c630d5b9d47047cc218928c343988484a165ac400e5eb6fe70ea300fc7242deeb0e920c7724290f6
+  checksum: 10c0/ead9495cfc6b1da5e7025856dcce2591e9bae635357410c0d2dd619fce797d2a1d402887580ca4b336cb78168b195224869967de370a23f61663cf1e4836121c
   languageName: node
   linkType: hard
 
