@@ -57,7 +57,7 @@
     "karma-headless": "karma start --single-run --reporters coverage-istanbul,spec,progress"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.8.3",
+    "@biomejs/biome": "^1.9.4",
     "@music-metadata/test-audio": "^0.1.0",
     "@types/chai": "^4.3.19",
     "@types/debug": "^4.1.12",
