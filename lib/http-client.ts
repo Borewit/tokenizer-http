@@ -44,6 +44,7 @@ export class HttpClient implements IRangeRequestClient {
     }
 
     const headers = new Headers();
+    headers.set('Range', 'bytes=' + range[0] + '-' + range[1]);
 
     const response = new ResponseInfo(await fetch(this.resolvedUrl || this.url, {method, headers, signal: this.abortController.signal}));
     if (response.response.ok) {
