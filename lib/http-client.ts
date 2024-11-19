@@ -37,14 +37,14 @@ export class HttpClient implements IRangeRequestClient {
   }
 
   public async getResponse(method: string, range?: [number, number]): Promise<IRangeRequestResponse> {
+
+    const headers = new Headers();
     if (range) {
       debug(`_getResponse ${method} ${range[0]}..${range[1]}`);
+      headers.set('Range', `bytes=${range[0]}-${range[1]}`);
     } else {
       debug(`_getResponse ${method} (range not provided)`);
     }
-
-    const headers = new Headers();
-    headers.set('Range', 'bytes=' + range[0] + '-' + range[1]);
 
     const response = new ResponseInfo(await fetch(this.resolvedUrl || this.url, {method, headers, signal: this.abortController.signal}));
     if (response.response.ok) {
