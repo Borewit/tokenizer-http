@@ -285,7 +285,7 @@ __metadata:
   dependencies:
     "@biomejs/biome": "npm:=1.9.4"
     "@music-metadata/test-audio": "npm:^0.1.0"
-    "@tokenizer/range": "npm:^0.10.0"
+    "@tokenizer/range": "npm:^0.12.0"
     "@types/chai": "npm:^5.0.1"
     "@types/debug": "npm:^4.1.12"
     "@types/mocha": "npm:^10.0.9"
@@ -312,13 +312,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@tokenizer/range@npm:^0.10.0":
-  version: 0.10.0
-  resolution: "@tokenizer/range@npm:0.10.0"
+"@tokenizer/range@npm:^0.12.0":
+  version: 0.12.0
+  resolution: "@tokenizer/range@npm:0.12.0"
   dependencies:
-    debug: "npm:^4.3.6"
-    strtok3: "npm:^9.0.0"
-  checksum: 10c0/3e036c79f20cd3a88dd58fa249c5d2ce1d986d85a4678f97d40db67c3eba4a2e9b5eaf70869b78919e61e13573a1209de96c421228d39b0025a540df606466c7
+    debug: "npm:^4.3.7"
+    strtok3: "npm:^9.1.1"
+  checksum: 10c0/a140a7159233908c58bbba02adf81e85e91a8540d571974f97f98ea56001a81bb0b56b2f473ea7eea1155580ada7931e5e4774cc84f25aa96632622a39cac8ac
   languageName: node
   linkType: hard
 
@@ -1289,18 +1289,6 @@ __metadata:
     supports-color:
       optional: true
   checksum: 10c0/082c375a2bdc4f4469c99f325ff458adad62a3fc2c482d59923c260cb08152f34e2659f72b3767db8bb2f21ca81a60a42d1019605a412132d7b9f59363a005cc
-  languageName: node
-  linkType: hard
-
-"debug@npm:^4.3.6":
-  version: 4.3.6
-  resolution: "debug@npm:4.3.6"
-  dependencies:
-    ms: "npm:2.1.2"
-  peerDependenciesMeta:
-    supports-color:
-      optional: true
-  checksum: 10c0/3293416bff072389c101697d4611c402a6bacd1900ac20c0492f61a9cdd6b3b29750fc7f5e299f8058469ef60ff8fb79b86395a30374fbd2490113c1c7112285
   languageName: node
   linkType: hard
 
@@ -3327,13 +3315,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"peek-readable@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "peek-readable@npm:5.2.0"
-  checksum: 10c0/7647d56786c94fc7f5f39923ef5f6ed1da7be92a2c221b743db74f1517821b1e944cc965d8f018a7e6984d969b6ced8a0c421aece7996c0b1981eac9daa4c323
-  languageName: node
-  linkType: hard
-
 "peek-readable@npm:^5.3.1":
   version: 5.3.1
   resolution: "peek-readable@npm:5.3.1"
@@ -3955,16 +3936,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strtok3@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "strtok3@npm:9.0.0"
-  dependencies:
-    "@tokenizer/token": "npm:^0.3.0"
-    peek-readable: "npm:^5.2.0"
-  checksum: 10c0/7d7cde9c5a3b195131f3652c8b0cb20d96e80b10d30a19294379e4302d0d4952bdc24a516c8a6cfa82bcb96f5b47e49ec917e8cc23c81052044a2ec41d15fb30
-  languageName: node
-  linkType: hard
-
 "strtok3@npm:^9.0.1":
   version: 9.0.1
   resolution: "strtok3@npm:9.0.1"
@@ -3972,6 +3943,16 @@ __metadata:
     "@tokenizer/token": "npm:^0.3.0"
     peek-readable: "npm:^5.3.1"
   checksum: 10c0/ab96030c3d30899fc885ed87b305086b6421d64c1a2b9f5240c6ecffde7b819e174d67bd3b1ecc14a10f539c7a818a0ac47386b4bbb2fa913f673b6ed1c0eb78
+  languageName: node
+  linkType: hard
+
+"strtok3@npm:^9.1.1":
+  version: 9.1.1
+  resolution: "strtok3@npm:9.1.1"
+  dependencies:
+    "@tokenizer/token": "npm:^0.3.0"
+    peek-readable: "npm:^5.3.1"
+  checksum: 10c0/ef9cd2a6cd21aec368c7f6fbd1d93548adc2c5b69ee28fa9a4b4e8fb6be6e539f3fcdf21107196e0c3fdff1c433db7e5d0fb8cab132c0b013ed9eef220bdcf2f
   languageName: node
   linkType: hard
 
