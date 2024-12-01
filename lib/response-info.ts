@@ -32,9 +32,13 @@ export class ResponseInfo {
 
   public toRangeRequestResponse(): IRangeRequestResponse {
     const contentRange = this.getContentRange();
+    const size = contentRange ? contentRange.instanceLength : this.getContentLength();
+    if (typeof size !== 'number') {
+      throw new Error('Could not determine file-size from HTTP response');
+    }
     return {
       url: this.response.url,
-      size: contentRange ? contentRange.instanceLength : this.getContentLength(),
+      size,
       mimeType: this.getContentType() ?? undefined,
       acceptPartialRequests: this.acceptRanges(),
       contentRange,
