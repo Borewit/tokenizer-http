@@ -62,7 +62,7 @@
     "@types/chai": "^5.0.1",
     "@types/debug": "^4.1.12",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^22.10.1",
+    "@types/node": "^22.10.2",
     "chai": "^5.1.2",
     "coveralls": "^3.1.1",
     "del-cli": "^6.0.0",
